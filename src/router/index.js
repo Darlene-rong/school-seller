@@ -10,6 +10,7 @@ import school from '@/components/schoolPage/school.vue'
 import todayDetails from '@/components/schoolPage/page/todayDetails.vue'
 //订单
 import order from '@/components/orderPage/order.vue'
+import looking from '@/components/orderPage/looking.vue'
 
 //个人信息
 import personal from '@/components/personalPage/personal.vue'
@@ -121,6 +122,11 @@ export default new Router({
       path: '/todayDetails',
       name: 'todayDetails',
       component: todayDetails
+    },
+    {
+      path: '/looking',
+      name: 'looking',
+      component: looking
     }
   ]
 })
