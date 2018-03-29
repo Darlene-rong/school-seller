@@ -34,12 +34,12 @@
                     {
                         index: 1,
                         title: '校友圈',
-                        path: '/MainEntrance'
+                        path: 'school'
                     },
                     {
                         index: 2,
                         title: '订单',
-                        path: 'order'
+                        path: 'orderPage'
                     },
                     {
                         index: 3,
