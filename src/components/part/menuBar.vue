@@ -52,7 +52,7 @@
             return {
                 menuitemone: [
                     {
-                        path: '/order',
+                        path: '/orderPage',
                         title: '订单',
                         index: 0,
                         
@@ -96,7 +96,7 @@
                         
                     },
                     {
-                        path: '/',
+                        path: '/helpCenter',
                         title: '签到',
                         index: 3,
                        
