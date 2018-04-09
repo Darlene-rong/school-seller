@@ -2,20 +2,20 @@
     <div class="msite_nav">
         <div class="msite-main">
             <div v-for="item in msiteOne" class="msite-content">
-                <router-link :to="{path: item.path}">                   
+                <router-link :to="{path: '/classifyChannel'}">                   
                     <img :src="item.img" alt="">
                     <p>{{item.title}}</p>                  
                 </router-link>
             </div>
         </div>
-        <div class="msite-main">
+        <!-- <div class="msite-main">
             <div v-for="item in msiteTwo" class="msite-content">
-                <router-link :to="{path: item.path}">                   
+                <router-link :to="{path: '/classifyChannel'}">                   
                         <img :src="item.img" alt="">
                         <p>{{item.title}}</p>                  
                 </router-link>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -26,12 +26,12 @@
             return {
                 msiteOne:[
                     {
-                        path: '/',
+                        path: '/classifyChannel',
                         img: require("../../../assets/img/homePage/火腿.png"),
                         title: '超市便利' 
                     },
                     {
-                        path: '/',
+                        path: '/classifyChannel',
                         img: require("../../../assets/img/homePage/饮料.png"),
                         title: '新鲜果蔬' 
                     },
@@ -43,31 +43,31 @@
                     {
                         path: '/',
                         img: require("../../../assets/img/homePage/面包.png"),
-                        title: '预定早餐' 
+                        title: '楼层自营' 
                     },
                 ],
-                msiteTwo:[
-                    {
-                        path: '/',
-                        img: require("../../../assets/img/homePage/锣鼓.png"),
-                        title: '文具体育' 
-                    },
-                    {
-                        path: '/',
-                        img: require("../../../assets/img/homePage/薯条.png"),
-                        title: '方便速食' 
-                    },
-                    {
-                        path: '/',
-                        img: require("../../../assets/img/homePage/溜冰鞋.png"),
-                        title: '居家日用' 
-                    },
-                    {
-                        path: '/',
-                        img: require("../../../assets/img/homePage/啤酒.png"),
-                        title: '夜宵速递' 
-                    },
-                ]
+                // msiteTwo:[
+                //     {
+                //         path: '/',
+                //         img: require("../../../assets/img/homePage/锣鼓.png"),
+                //         title: '文具体育' 
+                //     },
+                //     {
+                //         path: '/',
+                //         img: require("../../../assets/img/homePage/薯条.png"),
+                //         title: '方便速食' 
+                //     },
+                //     {
+                //         path: '/',
+                //         img: require("../../../assets/img/homePage/溜冰鞋.png"),
+                //         title: '居家日用' 
+                //     },
+                //     {
+                //         path: '/',
+                //         img: require("../../../assets/img/homePage/啤酒.png"),
+                //         title: '楼层自营' 
+                //     },
+                // ]
             }
         }
     }    

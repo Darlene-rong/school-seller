@@ -25,8 +25,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <task-bar></task-bar> -->
-            <!-- <split></split>           -->
             <menu-bar></menu-bar>   
          </div>   
     </div>

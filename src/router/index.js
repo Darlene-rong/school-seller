@@ -4,7 +4,7 @@ import MainEntrance from '@/components/SellersPage/MainEntrance'
 import appentrance from '@/components/appentrance'
 //主页
 import homepage from '@/components/homePage/homepage.vue'
-
+import classifyChannel from '@/components/homePage/classifyPage/classifyChannel.vue'
 //校友圈
 import school from '@/components/schoolPage/school.vue'
 import todayDetails from '@/components/schoolPage/page/todayDetails.vue'
@@ -127,6 +127,11 @@ export default new Router({
       path: '/lookingOrderDetails',
       name: 'lookingOrderDetails',
       component: lookingOrderDetails
+    },
+    {
+      path: '/classifyChannel',
+      name: 'classifyChannel',
+      component: classifyChannel
     }
   ]
 })
