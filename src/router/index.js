@@ -14,18 +14,19 @@ import lookingOrderDetails from '@/components/orderPage/lookingOrderDetails.vue'
 
 //个人信息
 import personal from '@/components/personalPage/personal.vue'
-import enter from '@/components/part/enter.vue'
-import helpCenter from '@/components/part/helpCenter.vue'
+import uncultivated from '@/components/part/uncultivated.vue'
 import about from '@/components/part/about.vue'
-import agreement from '@/components/part/agreement.vue'
-import privercy from '@/components/part/agreement.vue'
 import download from '@/components/part/download.vue'
 import register from '@/components/personalPage/page/register.vue'
-
+import setting from '@/components/personalPage/page/setting.vue'
+import receivingAddress from '@/components/personalPage/page/receivingAddress.vue'
+import helpcenter from '@/components/personalPage/page/helpcenter.vue'
+import helpCenterDetails from '@/components/part/helpCenterDetails.vue'
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    //foot底部栏
     {
       path: '/',
       name: 'appentrance',
@@ -84,24 +85,14 @@ export default new Router({
       ]
     },
     {
-      path: '/helpCenter',
-      name: 'helpCenter',
-      component: helpCenter
+      path: '/uncultivated',
+      name: 'uncultivated',
+      component: uncultivated
     },
     {
       path: '/about',
       name: 'about',
       component: about
-    },
-    {
-      path: '/agreement',
-      name: 'agreement',
-      component: agreement
-    },
-    {
-      path: '/privercy',
-      name: 'privercy',
-      component: privercy
     },
     {
       path: '/download',
@@ -112,11 +103,6 @@ export default new Router({
       path: '/register',
       name:'register',
       component: register
-    },
-    {
-      path: '/enter',
-      name: 'enter',
-      component: enter
     },
     {
       path: '/todayDetails',
@@ -132,6 +118,26 @@ export default new Router({
       path: '/classifyChannel',
       name: 'classifyChannel',
       component: classifyChannel
+    },
+    {
+      path: '/setting',
+      name: 'setting',
+      component: setting
+    },
+    {
+      path: '/receivingAddress',
+      name: 'receivingAddress',
+      component: receivingAddress
+    },
+    {
+      path: '/helpcenter',
+      name: 'helpcenter',
+      component: helpcenter
+    },
+    {
+      path: '/helpCenterDetails',
+      name: 'helpCenterDetails',
+      component: helpCenterDetails
     }
   ]
 })

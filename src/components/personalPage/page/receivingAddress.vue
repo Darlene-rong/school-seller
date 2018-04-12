@@ -1,13 +1,11 @@
 <template>
-    <div class="enter">
-        dfgg
+    <div>
+
     </div>
 </template>
 
 <script>
-    export default {
-        name: 'enter'
-    }
+    
 </script>
 
 <style lang="scss" scoped>

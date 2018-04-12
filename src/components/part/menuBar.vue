@@ -1,17 +1,13 @@
 <template>
     <div class="tigerbar">
-        <div>
-            
-        </div>
         <p class="tigetitle">喵服务</p>
         <div class="menubar">
             <router-link :to="{path: item.path}" v-for="(item,index) in menuitemone" :key="item.id">
                 <div class="menuitem">
                     <i class="iconfont itop" v-if="index === 0">&#xe648</i>  
-                    <i class="iconfont itop" v-if="index === 1">&#xe61b</i> 
-                    <i class="iconfont itop" v-if="index === 2">&#xe893</i> 
-                    <i class="iconfont itop" v-if="index === 3">&#xe608</i> 
-
+                    <i class="iconfont itop" v-if="index === 1">&#xe893</i>
+                    <i class="iconfont itop" v-if="index === 2">&#xe608</i> 
+                    <!-- <i class="iconfont itop" v-if="index === 3">&#xe608</i>  -->
                     <p>{{item.title}}</p>              
                 </div>                
             </router-link>
@@ -19,11 +15,10 @@
         <div class="menubar">
             <router-link :to="{path: item.path}" v-for="(item,index) in menuitemtwo" :key="item.id">
                 <div class="menuitem">
-                    <i class="iconfont itop" v-if="index === 0">&#xe8c3</i>  
-                    <i class="iconfont itop" v-if="index === 1">&#xe606</i> 
-                    <i class="iconfont itop" v-if="index === 2">&#xe645</i> 
-                    <i class="iconfont itop" v-if="index === 3">&#xe937</i> 
-
+                    <i class="iconfont itop3" v-if="index === 0">&#xe8c3</i>  
+                    <i class="iconfont itop3" v-if="index === 1">&#xe606</i> 
+                    <i class="iconfont itop3" v-if="index === 2">&#xe645</i> 
+                    <i class="iconfont itop3" v-if="index === 3">&#xe937</i> 
                     <p>{{item.title}}</p>              
                 </div>                
             </router-link>
@@ -57,23 +52,29 @@
                         index: 0,
                         
                     },
-                    {
-                        path: '/',
-                        title: '我的评价',
-                        index: 1,
+                    // {
+                    //     path: '/',
+                    //     title: '我的地址',
+                    //     index: 2,
                         
-                    },
+                    // },
                     {
                         path: '/',
                         title: '我的地址',
-                        index: 2,
+                        index: 1,
                         
                     },
-                    {
-                        path: '/',
-                        title: '杂烩',
-                        index: 3,
+                    // {
+                    //     path: '/',
+                    //     title: '杂烩',
+                    //     index: 3,
                         
+                    // },
+                    {
+                        path: '/uncultivated',
+                        title: '签到',
+                        index: 2,
+                       
                     },
                 ],
                 menuitemtwo: [
@@ -84,23 +85,18 @@
                         
                     },
                     {
-                        path: '/helpCenter',
+                        path: '/helpcenter',
                         title: '帮助中心',
                         index: 1,
                        
                     },
                     {
-                        path: '/helpCenter',
+                        path: '/uncultivated',
                         title: '客服中心',
                         index: 2,
                         
                     },
-                    {
-                        path: '/helpCenter',
-                        title: '签到',
-                        index: 3,
-                       
-                    },
+
                 ],
                 menuitemthree: [
                     {
@@ -168,6 +164,10 @@
                 .itop1 {
                     font-size: 0.25rem;
                     color: #29C3B1;
+                }
+                .itop3 {
+                    color: rgb(255, 109, 73);
+                    font-size: 0.25rem;
                 }
                 p {
                     font-size: 0.1rem;

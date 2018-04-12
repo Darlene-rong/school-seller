@@ -2,25 +2,24 @@
     <div class="personal" ref="personal">
          <div class="ooorr">
             <!-- dddd -->
-            <header-bar mold='personalbar'></header-bar>
+            <header-bar mold='personalbar' ></header-bar>
             <!-- 个人信息 -->
             <div class="personal-main">
                 <div class="information">
                     <!-- 登录状态 -->
-                    <div class="header-portratil"  v-show="person === 'd'">
+                    <div class="header-portratil">
                         <img src="../../assets/img/mainView/darlene.jpg" alt="">
                     </div>
-                    <div class="header-message"  v-show="person === 'd'">
+                    <div class="header-message">
                         <p class="name">__Darlene</p>
                         <p class="change">修改信息></p>
                     </div>
                     <!-- <img src="../../assets/img/Add.gif" alt=""> -->
                     <!-- 未登录状态 -->
-                    <div class="header-portratil">
+                    <div class="header-portratil"   v-show="person === 'd'">
                         <img src="../../assets/img/akari.jpg" alt="">
-                    </div>
-                    
-                    <div class="header-me" @click="gotoAddress({path:'/register'})">
+                    </div>    
+                    <div class="header-me"   v-show="person === 'd'" @click="gotoAddress({path:'/register'})">
                         <span class="signin">登录/注册</span>
                     </div>
                 </div>
@@ -32,7 +31,7 @@
 
 <script>
     import headerBar from '../part/headerBar.vue'
-    import taskBar from '../part/taskBar.vue'
+
     import split from '../SellersPage/assembly/split.vue'
     import menuBar from '../part/menuBar.vue'
     import BScroll from 'better-scroll'
@@ -40,7 +39,7 @@
     export default  {
         name: 'personal',
         components: {
-            headerBar,taskBar,split,menuBar
+            headerBar,split,menuBar
         },
         created() {
             refresh('我的信息');

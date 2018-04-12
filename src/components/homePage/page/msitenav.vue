@@ -2,7 +2,11 @@
     <div class="msite_nav">
         <div class="msite-main">
             <div v-for="item in msiteOne" class="msite-content">
-                <router-link :to="{path: '/classifyChannel'}">                   
+                <router-link :to="{path: '/classifyChannel',
+                                    query: {
+                                        title: item.title
+                                    }
+                }">                   
                     <img :src="item.img" alt="">
                     <p>{{item.title}}</p>                  
                 </router-link>
@@ -26,22 +30,22 @@
             return {
                 msiteOne:[
                     {
-                        path: '/classifyChannel',
+
                         img: require("../../../assets/img/homePage/火腿.png"),
                         title: '超市便利' 
                     },
                     {
-                        path: '/classifyChannel',
+
                         img: require("../../../assets/img/homePage/饮料.png"),
                         title: '新鲜果蔬' 
                     },
                     {
-                        path: '/',
+
                         img: require("../../../assets/img/homePage/披萨.png"),
                         title: '新店特惠' 
                     },
                     {
-                        path: '/',
+
                         img: require("../../../assets/img/homePage/面包.png"),
                         title: '楼层自营' 
                     },

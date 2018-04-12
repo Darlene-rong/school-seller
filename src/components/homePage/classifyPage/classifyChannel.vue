@@ -1,6 +1,7 @@
 <template>
     <div class="classify-Channel" ref="classify">
         <div>
+            <header-bar mold="today" monickor="频道" test="/homepage"></header-bar>
             <div class="channel-top">
                 <div v-for="item in items" class="channel">
                     <router-link :to="{path : '/'}" >
@@ -25,6 +26,7 @@
 <script>
     import BScroll from 'better-scroll'
     import nearbyList from './../page/nearbyList.vue'
+    import headerBar from '../../part/headerBar.vue'
     export default {
         name: 'classifyChannel',
         data() {
@@ -64,9 +66,10 @@
                     this.scroll.refresh();
                 }
             })
+            
         },
         components: {
-            nearbyList
+            nearbyList,headerBar
         }
     }
 </script>

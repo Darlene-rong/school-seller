@@ -5,17 +5,11 @@
             <p>{{name}}</p>
         </div>
         <div class="bar personalar" v-if="mold === 'personalbar'">
-            <i class="iconfont icleft">&#xe6ae</i>
+            <i class="iconfont icleft" @click="transform({path:'/setting'})">&#xe6ae</i>
             <div class="icright">
                 <i class="iconfont messagetop" @click="showMoney">&#xe6aa</i>
                 <i class="iconfont messagebottom">&#xe713</i>
             </div>
-        </div>
-        <div class="bar headbar" v-if="mold === 'agreement'">
-            <router-link :to="{path:'/about'}">
-                <i class="iconfont font">&#xe697</i>  
-            </router-link>
-            <p>软件许可使用协议</p>
         </div>
         <div class="bar headbar" v-if="mold === 'register'">
             <router-link :to="{path:'personal'}">
@@ -26,10 +20,9 @@
         <div class="obrr bar" v-if="mold === 'order'">
             <p>{{monickor}}</p>
         </div>
-
         <!-- 动态详情 -->
         <div class="bar headbar" v-if="mold === 'today'">
-            <router-link :to="{path:'/school'}">
+            <router-link :to="{path: test}">
                 <i class="iconfont font">&#xe697</i>  
             </router-link>
             <p>{{monickor}}</p>
@@ -55,6 +48,9 @@
             },
             monickor: {
                 type: String
+            },
+            test: {
+                type: String
             }
         },
         methods: {
@@ -63,6 +59,9 @@
             },
             showMoney() {
                 
+            },
+            transform(path) {
+                this.$router.push(path);
             }
         }
     }
