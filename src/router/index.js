@@ -20,6 +20,7 @@ import download from '@/components/part/download.vue'
 import register from '@/components/personalPage/page/register.vue'
 import setting from '@/components/personalPage/page/setting.vue'
 import receivingAddress from '@/components/personalPage/page/receivingAddress.vue'
+import manageAddress from '@/components/personalPage/page/manageAddress.vue'
 import helpcenter from '@/components/personalPage/page/helpcenter.vue'
 import helpCenterDetails from '@/components/part/helpCenterDetails.vue'
 Vue.use(Router)
@@ -138,6 +139,11 @@ export default new Router({
       path: '/helpCenterDetails',
       name: 'helpCenterDetails',
       component: helpCenterDetails
+    },
+    {
+      path: '/manageAddress',
+      name: 'manageAddress',
+      component: manageAddress
     }
   ]
 })

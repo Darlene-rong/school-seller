@@ -59,7 +59,7 @@
                         
                     // },
                     {
-                        path: '/',
+                        path: '/manageAddress',
                         title: '我的地址',
                         index: 1,
                         
