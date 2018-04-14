@@ -39,7 +39,7 @@
                 <h1>营业中</h1>
             </div>
         </div>
-        <div class="nearby-content">
+        <div class="nearby-content" @click="nearby">
             <div class="nearby-img">
                 <img src="../../../assets/img/mainView/darlene.jpg" alt="">
             </div>
@@ -79,6 +79,13 @@
         },
         components: {
             star,toubu
+        },
+        methods: {
+            nearby() {
+                this.$router.push({
+                    path: '/MainEntrance'
+                })
+            }
         }
 
     }

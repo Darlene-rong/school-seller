@@ -114,8 +114,6 @@ export default {
 
         },
         testo(val) {
-            // console.log(val)
-            // this.selectfoods.count = val;
             let foodTwo = [];
             this.goods.forEach((good) => {
                 good.foods.forEach((food) => {

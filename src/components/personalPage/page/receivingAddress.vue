@@ -54,7 +54,15 @@
              detail: '',
              backgro: false,
              choice: '请选择',
-             title: '南华大学'
+             title: '南华大学',
+             num: 1,
+            //  manageList: [
+            //      {
+            //         addressName: '',
+            //         addressTel: '',
+            //         detail: '',
+            //      }
+            //  ]
          }
      },
      components: {
@@ -67,7 +75,8 @@
                  query: {
                      addressName: this.addressName,
                      addressTel: this.addressTel,
-                     detail: this.detail
+                     detail: this.detail,
+                     index: this.num
                  }
              })
          },
