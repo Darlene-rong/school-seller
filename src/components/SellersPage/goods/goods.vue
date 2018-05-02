@@ -45,6 +45,7 @@
        :minprice="seller.minPrice"></shopcart>
        <!-- 商品详情 -->
        <food :food="foodDetail" ref="food" @testtwo="testo"></food>
+
   </div>
 </template>
 
@@ -67,11 +68,12 @@ export default {
             scrollY: 0,
             seller: {},
             selectFoods: [],
-            foodDetail: {}           
+            foodDetail: {},   
+
         }
     },  
     components: {
-        icon,shopcart,shopcount,food
+        icon,shopcart,shopcount,food,
     },
     created() {
         const _this = this;

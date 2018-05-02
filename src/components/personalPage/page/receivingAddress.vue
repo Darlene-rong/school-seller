@@ -1,5 +1,5 @@
 <template>
-    <div class="receiving">
+    <div class="receiving" v-show="receive">
         <div class="receiving-address">
             <header-bar mold="today" test="manageAddress" monickor="添加新地址"></header-bar>
             <div class="address-name">
@@ -56,6 +56,7 @@
              choice: '请选择',
              title: '南华大学',
              num: 1,
+             receive: false
             //  manageList: [
             //      {
             //         addressName: '',
@@ -68,6 +69,12 @@
      components: {
          headerBar,split
      },
+     props: {
+         receive: {
+             type: Boolean,
+             default: false
+         }
+     },
      methods: {
          keepAddress() {
              this.$router.push({
@@ -76,7 +83,7 @@
                      addressName: this.addressName,
                      addressTel: this.addressTel,
                      detail: this.detail,
-                     index: this.num
+                     id: this.num
                  }
              })
          },

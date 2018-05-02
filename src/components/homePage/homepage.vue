@@ -2,7 +2,7 @@
   <div class="homepage" ref="homePage">
       <div class="home-page">
             <div class="home-header">
-                    <router-link :to="{path:'/'}">
+                    <router-link :to="{path:'/chooiceMap'}">
                         <div class="header-one">
                             <i class="iconfont one">&#xe609</i>
                             <p>选择地址</p>
@@ -16,7 +16,7 @@
                     </router-link>
             </div>
             <div class="header-search">
-                <router-link  :to="{path:'/'}">
+                <router-link  :to="{path:'/searchpage'}">
                     <div class="search">
                         <i class="iconfont one">&#xe653</i>
                         <p>搜索</p>

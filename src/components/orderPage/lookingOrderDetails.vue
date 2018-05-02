@@ -36,41 +36,6 @@
                         </div>
                         <p class="content-price">￥10</p>
                     </div>
-
-
-                    <!-- 测试 -->
-                    <div class="list-content">
-                        <div class="content-img">
-                            <img src="../../assets/img/mainView/darlene.jpg" alt="">   
-                            <div class="content-main">
-                                <p>可乐</p>
-                                <p>x1</p>
-                            </div>                            
-                        </div>
-                        <p class="content-price">￥10</p>
-                    </div>
-                    <div class="list-content">
-                        <div class="content-img">
-                            <img src="../../assets/img/mainView/darlene.jpg" alt="">   
-                            <div class="content-main">
-                                <p>可乐</p>
-                                <p>x1</p>
-                            </div>                            
-                        </div>
-                        <p class="content-price">￥10</p>
-                    </div>
-                    <div class="list-content">
-                        <div class="content-img">
-                            <img src="../../assets/img/mainView/darlene.jpg" alt="">   
-                            <div class="content-main">
-                                <p>可乐</p>
-                                <p>x1</p>
-                            </div>                            
-                        </div>
-                        <p class="content-price">￥10</p>
-                    </div>
-
-
                     <div class="list-price">
                         <div class="fee">
                             <p>配送费</p>

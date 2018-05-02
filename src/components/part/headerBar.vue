@@ -8,7 +8,7 @@
             <i class="iconfont icleft" @click="transform({path:'/setting'})">&#xe6ae</i>
             <div class="icright">
                 <i class="iconfont messagetop" @click="showMoney">&#xe6aa</i>
-                <i class="iconfont messagebottom">&#xe713</i>
+                <!-- <i class="iconfont messagebottom">&#xe713</i> -->
             </div>
         </div>
         <div class="bar headbar" v-if="mold === 'register'">

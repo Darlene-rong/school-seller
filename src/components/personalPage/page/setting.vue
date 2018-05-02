@@ -6,14 +6,38 @@
                 <p>清除本地缓存</p>
                 <p style="color:red">已是最新版本1.0.1</p>
             </div> -->
-            <div class="about-item" >
-                <p>关于我们</p>
-                <i class="iconfont font">&#xe6a7</i>
+            <split></split>
+            <div class="about-item">
+                <p>账户名</p>
+                <router-link :to="{path: '/'}">
+                    <div class="right">
+                        <p>账户名</p>
+                        <i class="iconfont font">&#xe6a7</i>
+                    </div>                
+                </router-link>
             </div>
             <div class="about-item">
-                <p>版本检测</p>
-                <p style="color:red">已是最新版本1.0.1</p>
+                <p></p>
+                <router-link :to="{path: '/'}">
+                    <div class="right">
+                        <p>账户名</p>
+                        <i class="iconfont font">&#xe6a7</i>
+                    </div>                
+                </router-link>
             </div>
+            <!-- <split></split> -->
+            <split></split>
+            <div >
+                <div class="about-item" >
+                    <p>关于我们</p>
+                    <i class="iconfont font">&#xe6a7</i>
+                </div>
+                <div class="about-item">
+                    <p>版本检测</p>
+                    <p style="color:red">已是最新版本1.0.1</p>
+                </div>
+            </div>
+            <split></split>
         </div>
 
     </div>
@@ -21,16 +45,17 @@
 
 <script>
 import headerBar from '../../part/headerBar'
+import split from '../../SellersPage/assembly/split'
 
     export default {
         name: 'aboutebar',
         data() {
             return {
-                
+               
             }
         },
         components: {
-            headerBar,
+            headerBar,split
         },
         methods: {
             tranform(path) {
@@ -72,19 +97,21 @@ import headerBar from '../../part/headerBar'
                 font-size: 0.17rem;
                 display: flex;
                 height: 0.48rem;
-                // margin: 0.1rem 0.1rem 0.1rem 0.1rem;
                 margin-left: 0.15rem;
                 margin-right: 0.15rem;
-                // background-color: pink;
                 justify-content: space-between;
                 border-bottom: 0.01rem solid rgba(7, 17, 27, 0.1);
                 color: rgb(44, 42, 43);
-                p {
-                   padding-top: 0.1rem;
+                align-items: center;
+                .right {
+                    display: flex;
+                    p {
+                        color: #999;
+                    }
                 }
                 .font {
-                    font-size: 0.25rem;
-                    padding-top: 0.1rem;
+                    font-size: 0.23rem;
+                    padding-left: 0.04rem;
                 }
             }
         }  

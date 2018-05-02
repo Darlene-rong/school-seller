@@ -13,6 +13,7 @@
     "axios": "^0.17.1",
     "better-scroll": "^1.8.0",
     "vue": "^2.5.2",
+    "vue-amap": "^0.5.4",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },

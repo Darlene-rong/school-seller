@@ -2,8 +2,8 @@
     <div>
         <div class="shopcart">
             <!-- 底部购物车 -->
-            <div class="content" @click="showList">
-                <div class="content-left">
+            <div class="content" >
+                <div class="content-left" @click="showList">
                     <div class="cicrl">
                         <div class="logo" :class="{ 'heightlight' :totalCount>0 }">
                             <i class="iconfont icon-style" :class="{'heightlight' :totalCount>0}">&#xe600</i>
@@ -15,7 +15,7 @@
                     </div>
                     <div class="price">另外需要配送费{{deliveryPrice}}元</div>
                 </div>
-                <div class="content-right" :class="{ 'change' :totalPrice>minprice }">
+                <div class="content-right" :class="{ 'change' :totalPrice>minprice }" @click="balancePrice">
                     {{payPrice}}  
                 </div>
             </div>
@@ -57,20 +57,6 @@ import BScroll from 'better-scroll'
         name: 'shopcart',
         data() {
             return {
-                // balls: [
-                //     {
-                //         show: false
-                //     },
-                //     {
-                //         show: false
-                //     },
-                //     {
-                //         show: false
-                //     },
-                //     {
-                //         show: false
-                //     },
-                // ],
                 fold: true
             }
         },
@@ -164,6 +150,11 @@ import BScroll from 'better-scroll'
                 }
                 this.fold = true;
 
+            },
+            balancePrice() {
+                this.$router.push({
+                    path:'/balance',
+                })
             }
         }
     };

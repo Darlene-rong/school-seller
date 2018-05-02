@@ -2,9 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import MainEntrance from '@/components/SellersPage/MainEntrance'
 import appentrance from '@/components/appentrance'
+import balance from '@/components/SellersPage/balancePage/balance'
 //主页
 import homepage from '@/components/homePage/homepage.vue'
 import classifyChannel from '@/components/homePage/classifyPage/classifyChannel.vue'
+import chooiceMap from '@/components/homePage/page/chooiceMap.vue'
 //校友圈
 import school from '@/components/schoolPage/school.vue'
 import todayDetails from '@/components/schoolPage/page/todayDetails.vue'
@@ -23,6 +25,9 @@ import receivingAddress from '@/components/personalPage/page/receivingAddress.vu
 import manageAddress from '@/components/personalPage/page/manageAddress.vue'
 import helpcenter from '@/components/personalPage/page/helpcenter.vue'
 import helpCenterDetails from '@/components/part/helpCenterDetails.vue'
+
+//搜索页面
+import searchpage from '@/components/searchPage/searchpage.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -144,6 +149,21 @@ export default new Router({
       path: '/manageAddress',
       name: 'manageAddress',
       component: manageAddress
+    },
+    {
+      path: '/balance',
+      name: 'balance',
+      component: balance
+    },
+    {
+      path: '/chooiceMap',
+      name: 'chooiceMap',
+      component: chooiceMap
+    },
+    {
+      path: '/searchpage',
+      name: 'searchpage',
+      component: searchpage
     }
   ]
 })
