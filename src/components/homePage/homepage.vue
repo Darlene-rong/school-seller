@@ -5,7 +5,7 @@
                     <router-link :to="{path:'/chooiceMap'}">
                         <div class="header-one">
                             <i class="iconfont one">&#xe609</i>
-                            <p>选择地址</p>
+                            <p>{{testHome}}</p>
                             <i class="iconfont one">&#xe654</i>                  
                         </div>                 
                     </router-link >
@@ -41,14 +41,15 @@
         name: 'homepage',
         data() {
             return {
-
+                testHome: '选择地址'
             }
         },
         components: {
             msitenav,split,nearbyList
         },
         created () {
-            refresh('首页')
+            refresh('首页');
+            this.testHome = this.$route.query.home
             this.$nextTick(() => {
                 if(!this.scroll) {
                     this.scroll = new BScroll(this.$refs.homePage, {
